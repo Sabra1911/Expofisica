@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo y Simulación de Movimiento Parabólico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Aplicación para calcular y simular el movimiento parabólico de un proyectil.">
+    <meta name="keywords" content="movimiento parabólico, física, simulación, cálculo">
+    <meta name="author" content="Tu Nombre">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cálculo y Simulación de Movimiento Parabólico</h1>
+        </header>
+        <main>
+            <section class="input-section">
+                <div class="input-container">
+                    <label for="alcance_cm">Alcance Horizontal (cm):</label>
+                    <input type="number" id="alcance_cm" placeholder="Ingrese alcance en cm">
+                </div>
+                <div class="input-container">
+                    <label for="angulo">Ángulo de Disparo (°):</label>
+                    <input type="number" id="angulo" placeholder="Ingrese ángulo de disparo">
+                </div>
+                <button onclick="calcular()">Calcular</button>
+            </section>
+            <section class="result-section">
+                <div id="resultado">
+                    <h2>Resultados:</h2>
+                    <div id="resultados"></div>
+                </div>
+            </section>
+            <section class="simulation-section">
+                <canvas id="simulacion" width="600" height="400"></canvas>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="copyright">© 2024 Marco Sierra - Dayanna Sepúlveda - Yesid Gomez -Daniel Montes - Kevin Wilches - Expofisica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

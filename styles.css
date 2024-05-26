@@ -1,0 +1,131 @@
+/* styles.css */
+:root {
+  --main-bg-color: #f0f2f5;
+  --main-color: #333;
+  --accent-color: #4CAF50;
+  --input-bg-color: #fff;
+  --input-border-color: #ccc;
+  --input-focus-border-color: #4CAF50;
+  --button-bg-color: #4CAF50;
+  --button-hover-bg-color: #45a049;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--accent-color);
+}
+
+.input-section, .result-section, .simulation-section {
+  background: var(--input-bg-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--button-bg-color);
+  color: var(--input-bg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.result-section {
+  text-align: left;
+}
+
+.result-section h2 {
+  margin-top: 0;
+}
+
+#resultados p {
+  margin: 5px 0;
+}
+
+.simulation-section {
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  .input-section, .result-section, .simulation-section {
+      padding: 15px;
+  }
+
+  button {
+      padding: 8px;
+  }
+}
