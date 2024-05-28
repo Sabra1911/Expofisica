@@ -16,26 +16,30 @@
             <h1>Cálculo y Simulación de Movimiento Parabólico</h1>
         </header>
         <main>
-            <section class="input-section">
-                <div class="input-container">
-                    <label for="alcance_cm">Alcance Horizontal (cm):</label>
-                    <input type="number" id="alcance_cm" placeholder="Ingrese alcance en cm">
+            <div class="flex-container">
+                <div class="left-section">
+                    <section class="input-section">
+                        <div class="input-container">
+                            <label for="alcance_cm">Alcance Horizontal (cm):</label>
+                            <input type="number" id="alcance_cm" placeholder="Ingrese alcance en cm">
+                        </div>
+                        <div class="input-container">
+                            <label for="angulo">Ángulo de Disparo (°):</label>
+                            <input type="number" id="angulo" placeholder="Ingrese ángulo de disparo">
+                        </div>
+                        <button onclick="calcular()">Calcular</button>
+                    </section>
+                    <section class="result-section">
+                        <div id="resultado">
+                            <h2>Resultados:</h2>
+                            <div id="resultados"></div>
+                        </div>
+                    </section>
                 </div>
-                <div class="input-container">
-                    <label for="angulo">Ángulo de Disparo (°):</label>
-                    <input type="number" id="angulo" placeholder="Ingrese ángulo de disparo">
-                </div>
-                <button onclick="calcular()">Calcular</button>
-            </section>
-            <section class="result-section">
-                <div id="resultado">
-                    <h2>Resultados:</h2>
-                    <div id="resultados"></div>
-                </div>
-            </section>
-            <section class="simulation-section">
-                <canvas id="simulacion" width="600" height="400"></canvas>
-            </section>
+                <section class="simulation-section">
+                    <canvas id="simulacion" width="600" height="400"></canvas>
+                </section>
+            </div>
         </main>
     </div>
     <footer class="footer">
